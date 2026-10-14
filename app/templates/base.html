@@ -1,0 +1,45 @@
+{# Khung chung. Macro icon dùng SVG nhỏ, không cần thư viện hoặc ảnh bên ngoài. #}
+{% macro icon(name) -%}
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+{% if name == 'wallet' %}<path d="M20 8V5H5a2 2 0 0 0 0 14h15V8H5a2 2 0 0 1 0-4"/><path d="M20 10h-5v5h5"/><circle cx="16.5" cy="12.5" r=".5"/>
+{% elif name == 'transfer' %}<path d="M4 7h16M4 7l4-4M4 7l4 4M20 17H4M20 17l-4-4M20 17l-4 4"/>
+{% elif name == 'history' %}<path d="M4 8a9 9 0 1 1-1 8M4 3v5h5M12 7v5l3 2"/>
+{% elif name == 'logout' %}<path d="M9 4H4v16h5M12 12h9M17 8l4 4-4 4"/>
+{% elif name == 'user' %}<circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>
+{% elif name == 'lock' %}<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+{% elif name == 'send' %}<path d="m22 2-7 20-4-9L2 9 22 2ZM11 13 22 2"/>
+{% elif name == 'info' %}<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/>
+{% endif %}</svg>
+{%- endmacro %}
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Ngân hàng giả lập{% endblock %} · Nhóm 26</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/app.js" defer></script>
+</head>
+<body data-page="{% block page %}{% endblock %}" data-mode="{{ mode | default('api') }}">
+  <a class="skip-link" href="#main">Đi tới nội dung</a>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">26</span><span>Ngân hàng giả lập</span></a>
+    <span class="demo-tag"><span class="status-dot"></span>Dữ liệu thực hành · Không có tiền thật</span>
+  </header>
+  <div class="shell">
+    <nav class="sidebar" aria-label="Điều hướng chính">
+      <a href="/account" data-nav="account">{{ icon('wallet') }}<span>Tài khoản</span></a>
+      <a href="/transfer" data-nav="transfer">{{ icon('transfer') }}<span>Chuyển tiền</span></a>
+      <a href="/history" data-nav="history">{{ icon('history') }}<span>Lịch sử</span></a>
+      <button id="logout" type="button">{{ icon('logout') }}<span>Đăng xuất</span></button>
+    </nav>
+    <main id="main" class="main-content">
+      {% block content %}{% endblock %}
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </main>
+  </div>
+  <footer class="footer">Đồ án An toàn thông tin · Nhóm 26
+    <span class="preview-only">Chế độ xem trước: dữ liệu chỉ được mô phỏng trong trình duyệt.</span>
+  </footer>
+</body>
+</html>

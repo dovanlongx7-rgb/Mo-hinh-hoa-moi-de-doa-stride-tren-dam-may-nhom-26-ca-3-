@@ -1,0 +1,11 @@
+# Bộ phiên bản đã chạy kiểm thử trên Python 3.12 trong môi trường tạo gói.
+fastapi==0.143.0
+starlette==1.8.0
+pydantic==2.13.5
+uvicorn==0.54.0
+argon2-cffi==25.1.0
+PyJWT==2.15.1
+Jinja2==3.1.6
+python-dotenv==1.2.4
+httpx==0.28.1
+pytest==9.1.1

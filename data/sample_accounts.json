@@ -1,0 +1,5 @@
+[
+  {"user_id":"U_A","username":"van_a","full_name":"Nguyễn Văn A","account_id":"ACC_A","balance":1000000},
+  {"user_id":"U_B","username":"van_b","full_name":"Nguyễn Văn B","account_id":"ACC_B","balance":500000},
+  {"user_id":"U_C","username":"van_c","full_name":"Nguyễn Văn C","account_id":"ACC_C","balance":200000}
+]

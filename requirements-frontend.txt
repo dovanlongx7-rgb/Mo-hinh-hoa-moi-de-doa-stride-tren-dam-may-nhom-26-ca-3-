@@ -1,0 +1,2 @@
+# Chỉ cần thư viện này để dựng và xem frontend giả lập.
+Jinja2==3.1.6

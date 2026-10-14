@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Lịch sử{% endblock %}
+{% block page %}history{% endblock %}
+{% block content %}
+<p class="eyebrow">GIAO DỊCH</p><h1>Lịch sử chuyển tiền</h1>
+<p id="history-caption" class="lead">Đang tải giao dịch của bạn…</p>
+<div class="balance-banner">{{ icon('wallet') }}<span>Số dư hiện tại: <strong id="history-balance">—</strong></span></div>
+<div class="card history-card">
+  <div class="table-wrap"><table><caption class="sr-only">Lịch sử các giao dịch thuộc tài khoản của bạn</caption><thead><tr><th>Thời gian</th><th>Nguồn → Nhận</th><th>Số tiền</th><th>Trạng thái</th></tr></thead><tbody id="history"><tr><td colspan="4" class="empty-state">Đang tải…</td></tr></tbody></table></div>
+  <p id="history-note" class="history-note" hidden></p>
+</div>
+{% endblock %}

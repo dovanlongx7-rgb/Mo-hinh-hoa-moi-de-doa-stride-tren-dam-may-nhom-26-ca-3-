@@ -1,0 +1,36 @@
+{
+  "stage": 3,
+  "requires": [
+    "frontend-stage-1",
+    "database-stage-2"
+  ],
+  "files": {
+    "app/__init__.py": "37458d4ee3d1748b413d579daed44b6e1ae89aa08f1e5abfcc34e913233474ad",
+    "app/config.py": "daa63101fb560d65e79900575a8fca7c7dde067a5f12a3e24b3d33f34abca25a",
+    "app/main.py": "b925a6b5667e5dbe4da1c6476cbf8f403d30f8dcabfa727340fe79eed92facff",
+    "requirements.txt": "e67bc935101cc5983db0cf117ea716c2a4175a088331f3d585e5026dd8ae3129",
+    ".gitignore": "ec3cab36da439a1f7d295b5fc9a9942905c9d79e33953d960c9f69e01845abf4",
+    ".env.example": "702000a5511624db915b8a10106fe5abfff852a0017e4e7994280d178cfed120",
+    "README-BACKEND.md": "c2a6fa75b083e1fcdbac5545c71e20267a9f8c65976ea545d4706876075f2562",
+    "docs/backend_guide.md": "e8c9b26cccfc0320ad6fe499f7334874ed198d622f9e186cf87d63be1fd51704",
+    "docs/api_contract.md": "97596f42891373b5862ca29cac4143731de094a1970a3f1089be4fc992f078af",
+    "app/routers/__init__.py": "37458d4ee3d1748b413d579daed44b6e1ae89aa08f1e5abfcc34e913233474ad",
+    "app/routers/accounts.py": "f7f1d383c8d33bf90a9f07e899f91f7f8f93dcc758f4a8603af444c5846316e1",
+    "app/routers/auth.py": "d0e2881c074c04a139dc0f3bfcbbfcdc8447b56675b6ff7525bbad0a976c7e46",
+    "app/routers/transfers.py": "43dad36ae5deff4a4d130f0398552eb077e145703d454531554b5d808c4ec0ad",
+    "app/schemas/__init__.py": "37458d4ee3d1748b413d579daed44b6e1ae89aa08f1e5abfcc34e913233474ad",
+    "app/schemas/account.py": "7d095cf63cb9b8df57cf913ab403dfd169a21252f4a487bc6e3927fe619fa547",
+    "app/schemas/auth.py": "bf634eb5eed06d383e7131688af4b23962577a4f00effafe893c1c4a55f6a572",
+    "app/schemas/transfer.py": "530fbe2b0a4a18db1ce0ae623d5622ac348aebf5b4b0242ca8cea54b238f1496",
+    "app/security/__init__.py": "37458d4ee3d1748b413d579daed44b6e1ae89aa08f1e5abfcc34e913233474ad",
+    "app/security/passwords.py": "1eb5f35b22f60f9ddd815ee65744214f95912aa756529229cfa817a1b26e4f09",
+    "app/security/permissions.py": "05840ca45b5dfeb20e7d39d795ac362e171b74218c3702da25f548dbbe20c758",
+    "app/security/rate_limit.py": "e1791c5f55a6bf9a5cf727c0a2f9e8d27b99ed37debeb755c69a686a9b7904b5",
+    "app/security/tokens.py": "bd809690bb27d9cb38783adcf63bc80da10b927fdde7da888970e010d73d0dbd",
+    "app/services/__init__.py": "37458d4ee3d1748b413d579daed44b6e1ae89aa08f1e5abfcc34e913233474ad",
+    "app/services/account_service.py": "2deb938ff8b8bbb730333b0f6024b8262cf671bcbb1b0b543719d0a927f40ed5",
+    "app/services/audit_service.py": "5b9d0216a0890e86ebbb0a8f11d183c3747f17983ab41d55b0e4dbdcb033bf76",
+    "app/services/auth_service.py": "dc86ec27f3b965143d73f14fc4327552920e9e7c9f9fc83fa76b0370af8539ba",
+    "app/services/transfer_service.py": "b9ce52ad81d70b58a054654f019ddb0f258d4ae27dbb570c9bdc7ba24d2d5d43"
+  }
+}

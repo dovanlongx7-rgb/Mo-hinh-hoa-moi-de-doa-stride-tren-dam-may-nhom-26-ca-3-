@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Tài khoản{% endblock %}
+{% block page %}account{% endblock %}
+{% block content %}
+<p class="eyebrow">TÀI KHOẢN CỦA BẠN</p>
+<h1 id="welcome">Đang tải tài khoản…</h1>
+<p class="lead">Thông tin tài khoản trong môi trường giả lập.</p>
+<section id="accounts" class="account-list" aria-label="Danh sách tài khoản" aria-busy="true"></section>
+<template id="account-card">
+  <article class="card account-card">
+    <p class="balance-label">Số dư khả dụng</p>
+    <p class="balance" data-role="balance"></p>
+    <div class="account-details">
+      <div><span class="detail-label">Số tài khoản</span><strong data-role="account-id"></strong></div>
+      <div><span class="detail-label">Chủ tài khoản</span><strong data-role="owner"></strong></div>
+    </div>
+    <div class="account-actions"><a class="primary action-link" href="/transfer">{{ icon('send') }}Chuyển tiền</a><a class="text-link" href="/history">Xem lịch sử giao dịch</a></div>
+  </article>
+</template>
+{% endblock %}

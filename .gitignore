@@ -1,0 +1,14 @@
+# Môi trường và dữ liệu local
+.env
+.venv/
+venv/
+runtime/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vs/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+# Giữ .env.example và dữ liệu/minh chứng đã kiểm tra để nhóm dùng chung.

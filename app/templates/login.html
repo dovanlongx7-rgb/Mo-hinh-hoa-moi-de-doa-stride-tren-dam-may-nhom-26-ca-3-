@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Đăng nhập{% endblock %}
+{% block page %}login{% endblock %}
+{% block content %}
+<section class="login-heading">
+  <p class="eyebrow">CHÀO MỪNG BẠN</p>
+  <h1>Đăng nhập tài khoản</h1>
+  <p class="lead">Sử dụng tài khoản mẫu để thực hành ngân hàng số.</p>
+</section>
+<form id="login-form" class="card login-card">
+  <label for="username">Tên đăng nhập</label>
+  <div class="input-with-icon">{{ icon('user') }}<input id="username" name="username" value="van_a" autocomplete="username" required maxlength="50" spellcheck="false" autocapitalize="none"></div>
+  <label for="password">Mật khẩu</label>
+  <div class="input-with-icon">{{ icon('lock') }}<input id="password" name="password" type="password" autocomplete="current-password" required maxlength="128"></div>
+  <button class="primary full-width" type="submit">Đăng nhập</button>
+  <div class="login-note">
+    <p>Tài khoản mẫu: van_a, van_b, van_c</p>
+    <p class="preview-only">Mật khẩu xem trước: <strong>Demo@2026!</strong></p>
+    <p class="api-only">Dùng mật khẩu bạn đã đặt khi tạo dữ liệu mẫu.</p>
+  </div>
+</form>
+{% endblock %}

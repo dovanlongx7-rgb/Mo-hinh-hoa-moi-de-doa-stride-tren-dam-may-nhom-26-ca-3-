@@ -1,0 +1,19 @@
+{
+  ".gitignore": "ec3cab36da439a1f7d295b5fc9a9942905c9d79e33953d960c9f69e01845abf4",
+  "README-FRONTEND.md": "2f28a86bcb4709cc3fafb746a694639bed777044f46d587d0caa5883a15d1841",
+  "app/static/css/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/static/css/style.css": "414cb76e33101eb531c36b74bd8a50761e59136d53e350ac53f304401f9036e4",
+  "app/static/images/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/static/js/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/static/js/app.js": "43ce111c7d76d84f40082069e84025aadfe6465d2be3dd0647772fc55de87e67",
+  "app/templates/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/templates/account.html": "4812483373441a8f63e73a99bf40020ef6f4a6134efe83872fc2506ce583e1e3",
+  "app/templates/base.html": "2680c875cb2c977c782674347d840e2090a4e84c1c9e949e7777564fae5f1cda",
+  "app/templates/history.html": "3b12d24291fd02bae69577b901d397224a5f20aea4d9391021425fba9eb04aa3",
+  "app/templates/login.html": "7a9feeb703830bd7bcecc2ee6b46e1c6875f0ba5c4d005feb6ea7f254c51e1a3",
+  "app/templates/transfer.html": "57cda6183b9b2d84f954c4e5c1ee09678c5a85d25354fd1020eba075bb7198f5",
+  "docs/frontend_guide.md": "dd106c12aae9eb9e14c9da9ba033c687cf5c0f63f1d6542bb7abdba3b04ee240",
+  "requirements-frontend.txt": "90064bb92eb9662707c181fcc939a338780be1e178468817b0ac2ec45fe79d52",
+  "scripts/__init__.py": "37458d4ee3d1748b413d579daed44b6e1ae89aa08f1e5abfcc34e913233474ad",
+  "scripts/preview_frontend.py": "b3dd18bc852c874f2c4edbbdf5c2851047dd9d1654950b4357e43a1f494bebfc"
+}

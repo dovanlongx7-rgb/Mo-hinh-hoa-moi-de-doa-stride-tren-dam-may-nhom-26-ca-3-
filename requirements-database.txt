@@ -1,0 +1,4 @@
+# Chỉ cần các thư viện này cho cấu hình/seed/kiểm tra dữ liệu.
+# SQLite nằm trong thư viện chuẩn Python; không cần cài SQL Server.
+argon2-cffi==25.1.0
+python-dotenv==1.2.4

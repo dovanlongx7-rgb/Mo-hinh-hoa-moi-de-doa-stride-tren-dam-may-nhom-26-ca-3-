@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Chuyển tiền{% endblock %}
+{% block page %}transfer{% endblock %}
+{% block content %}
+<p class="eyebrow">CHUYỂN TIỀN NỘI BỘ</p><h1>Gửi tiền cho người nhận</h1>
+<p class="lead">Hạn mức thử nghiệm: 300.000 đ mỗi lần, 600.000 đ mỗi ngày UTC.</p>
+<form id="transfer-form" class="card transfer-card">
+  <label for="source">Tài khoản nguồn</label><select id="source" name="source" required disabled><option value="">Đang tải tài khoản…</option></select>
+  <label for="target">Tài khoản nhận</label><select id="target" name="target" required>
+    <option value="ACC_B">Nguyễn Văn B · ACC_B</option><option value="ACC_C">Nguyễn Văn C · ACC_C</option><option value="ACC_A">Nguyễn Văn A · ACC_A</option>
+  </select>
+  <label for="amount">Số tiền (VND)</label><input id="amount" name="amount" type="number" min="1" max="300000" step="1" value="100000" required inputmode="numeric">
+  <label for="confirm-password">Nhập lại mật khẩu để xác nhận</label><input id="confirm-password" name="confirm-password" type="password" autocomplete="current-password" required maxlength="128">
+  <div class="transfer-buttons"><button id="transfer-submit" class="primary" type="submit" disabled>Xác nhận chuyển tiền</button><button id="new-transfer" class="secondary" type="button">Giao dịch mới</button></div>
+  <p class="inline-note">{{ icon('info') }}<span>Đây là giao dịch giả lập, không có tiền thật.</span></p>
+</form>
+<section id="transfer-result" class="result" aria-live="polite" hidden></section>
+{% endblock %}
